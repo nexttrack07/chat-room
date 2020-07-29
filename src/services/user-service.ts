@@ -1,13 +1,22 @@
 export interface User {
   name: string
+  avatar?: string
   // id
 }
 
 const mockUsers: User[] = [
-  { name: 'Ben' },
-  { name: 'Travis' },
-  { name: 'Nathan' },
-  { name: 'Andros' },
+  {
+    name: 'Travis',
+    avatar: 'https://react.semantic-ui.com/images/avatar/small/joe.jpg',
+  },
+  {
+    name: 'Nathan',
+    avatar: 'https://react.semantic-ui.com/images/avatar/small/matt.jpg',
+  },
+  {
+    name: 'Andros',
+    avatar: 'https://react.semantic-ui.com/images/avatar/small/elliot.jpg',
+  },
 ]
 
 class UserService {

@@ -2,7 +2,7 @@ import { User } from 'services/user-service'
 
 export interface Message {
   sender: User
-  time: Date
+  time: string
   text: string
 }
 
@@ -29,7 +29,7 @@ class MessageService {
   }
 
   public addMessage(payload: MessagePayload): Message {
-    const message = { ...payload, time: new Date() }
+    const message = { ...payload, time: new Date().toLocaleTimeString() }
     this.messages = [...this.messages, message]
 
     return message

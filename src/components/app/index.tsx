@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { Container } from 'semantic-ui-react'
 import ChatLog from 'components/chat-log'
 import MessageBox from 'components/message-box'
 import { useDispatch, useSelector } from 'react-redux'
@@ -13,10 +14,10 @@ function App() {
   }, [dispatch])
 
   return (
-    <>
+    <Container>
       <ChatLog messages={messages} />
       <MessageBox />
-    </>
+    </Container>
   )
 }
 

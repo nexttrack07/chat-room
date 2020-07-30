@@ -14,7 +14,7 @@ function App() {
   }, [dispatch])
 
   return (
-    <Container>
+    <Container className='app-container'>
       <ChatLog messages={messages} />
       <MessageBox />
     </Container>

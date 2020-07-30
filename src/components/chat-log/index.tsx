@@ -9,7 +9,7 @@ interface Props {
 
 function ChatLog({ messages }: Props) {
   return (
-    <div className={styles.chatLogContainer}>
+    <div data-testid='chat-log' className={styles.chatLogContainer}>
       <Segment className={styles.segment}>
         <Comment.Group>
           {messages.map((message) => (

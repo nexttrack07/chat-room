@@ -45,7 +45,7 @@ function MessageBox() {
   }
 
   return (
-    <div className={styles.messageWrapper}>
+    <div data-testid='message-box' className={styles.messageWrapper}>
       <Label className={styles.messageLabel}>
         <Dropdown closeOnChange text={selectedUser?.name} simple>
           <Dropdown.Menu>
